@@ -1,0 +1,145 @@
+/* book Library Page */
+.bg-container{
+    background-image: url("https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5924.jpg?w=740&t=st=1679588920~exp=1679589520~hmac=b4d17d7c7ea7e68b9351e2a02ee96a1d6651fa6d38744f071efeb907d5d38d06");
+    height: 100vh;
+    background-size: cover;
+}
+.library-card{
+    text-align: center;
+    background-image: radial-gradient(#fff, #fafa11, transparent);
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 30%;
+}
+.main-heading{
+    font-family: "Roboto";
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.button{
+    color: white;
+    background-color: #25b1cc;
+    width: 138px;
+    height: 36px;
+    border-width: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 60px;
+}
+
+/* fictional Book Page */
+
+.book-types-bg-container{
+    background-image: url("https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg?w=900&t=st=1679591370~exp=1679591970~hmac=e4ecf23bd1f73f041a32ca2d9dcf7d8e56b7c0951c0b3c9390fb8e0076145340");
+    background-size: cover;
+    
+}
+.book-types-heading{
+    color: #fff;
+    font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  padding: 24px;
+}
+.book-types-paragraph{
+  color: #fff;
+  font-family: "Bree Serif";
+  padding: 0px;
+  background-color: #264f14;
+  padding: 10px;
+  margin: 15px;
+}
+.book-types-card-container{
+    background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 15px;
+}
+.book-types-card-heading{
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+.book-types-card-paragraph{
+    color: #6c6b70;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.book-types-card-image{
+    width: 80px;
+  height: 100px;
+}
+
+
+/* detailed view  */
+
+.detailed-view-bg-container {
+    background-image: linear-gradient(#a9e68dda,#ffffff, #a9e68dda);
+    height: 100vh;
+    background-size: cover;
+  }
+  .detailed-view-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    padding: 24px;
+  }
+  .detailed-view-card-container {
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 24px;
+  }
+  .detailed-view-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .detailed-view-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 15px;
+  }
+  .detailed-view-card-text-container {
+    padding: 16px;
+  }
+
+  .buttond{
+    color: white;
+    background-image: linear-gradient(#1a9fec, #b336ec);
+    width: 138px;
+    height: 70px;
+    font-weight: bold;
+    border-width: 1px;
+    border-color: #fff;
+    text-transform: uppercase;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    margin-left: 15px;
+    
+  }
+
+  .buttonc{
+    color: white;
+    background-image: linear-gradient(#0c8bd4, #72b7f7);
+    width: 138px;
+    height: 40px;
+    font-weight: bold;
+    border-width: 1px;
+    border-color: #fff;
+    text-transform: uppercase;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 60px;
+    margin-left: 15px;
+  } 

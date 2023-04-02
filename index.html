@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                    <!-- Book Library page -->
+  <div id="sectionHomePage">
+ <div class="bg-container d-flex flex-column justify-content-center p-5">
+  <div class="library-card">
+    <h1 class="main-heading">Book Library</h1>
+    <p class="paragraph">Find Your Books here</p>
+    <!-- <a href="#sectionFictionalBooks"><button class="button">Fictional</button></a> -->
+    <button class="button" onclick="display('sectionFictionalBooks')">Fictional</button>
+    <!-- <a href="#sectionNonFictionalBooks"><button class="button">Non-Fictional</button></a> -->
+    <button class="button" onclick="display('sectionNonFictionalBooks')">Non-Fictional</button>
+  </div>
+ </div>
+</div>
+
+                    <!-- Fictional book page -->
+    <div id="sectionFictionalBooks">
+    <div class="book-types-bg-container">
+      <h1 class="book-types-heading"> Fictional Categories</h1>
+      <p class="book-types-paragraph">Fictional books are books that tell a story that is not based on real events or people. The story and characters are created by the author's imagination and can be set in any time or place. Fictional books can take many forms, such as novels, short stories, and plays. The purpose of a 
+        fictional book is to entertain and engage the reader with a narrative that is purely a product of the author's creativity.</p>
+
+       <div class="book-types-card-container d-flex flex-row" onclick="display('sectionClassicsFictionalDetailedView')">
+       
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Classics</h1>
+          <p class="book-types-card-paragraph">Classics are a category of fictional 
+            books that are widely recognized as having significant literary value and enduring popularity, often spanning several generations.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/top-view-pile-books_23-2148213825.jpg?w=740&t=st=1679753044~exp=1679753644~hmac=a9a9807d3ea97434fa8f111116f34ee10d6f615df21aec8aa46ba852c2d36d6e" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionTragedyFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Tragedy</h1>
+          <p class="book-types-card-paragraph">Tragedy is a category of fictional books that typically involves a story where the 
+            protagonist is brought to ruin or suffers extreme sorrow, often due to a flaw or mistake in their character. The story usually 
+            ends on a bleak or pessimistic note, and often explores deeper human themes such as mortality, loss, and the human condition.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://st3.depositphotos.com/2001403/14162/i/450/depositphotos_141625308-stock-photo-tea-cup-and-books.jpg" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionScifiFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Sci-Fi</h1>
+          <p class="book-types-card-paragraph">Sci-Fi, or science fiction, is a category of fictional books that imagines a future or alternate reality
+             based on scientific and technological advances. 
+            This genre often explores themes related to science, technology, space exploration, and the future of humanity.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-stacked-books-ladders-education-day_23-2149241046.jpg?w=740&t=st=1679999804~exp=1680000404~hmac=0177edc3fc12a3e0b2f3930dab7ba4f78f2ae54effda7ded4cb4f3f63ce9fc25" />
+      </div>
+    
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionFantasyFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Fantasy</h1>
+          <p class="book-types-card-paragraph">Fantasy is a category of fictional books that typically involves elements of magic, mythology, and supernatural c
+            reatures in a fictional world. The genre often explores themes of heroism, good versus evil, and the struggle between different forces.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books_23-2149331952.jpg?w=740&t=st=1679999862~exp=1680000462~hmac=aa7b5c47b2522996a3c150d3db5d976eb0a2f82bf32405b9843ed961b87aa747" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionAction&AdventureFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Action and Adventure</h1>
+          <p class="book-types-card-paragraph">Action and adventure is a category of fictional books that typically involves a fast-paced story with thrilling sequences of 
+            physical action, danger, and excitement. This genre often explores themes of heroism, bravery, and survival in the face of adversity.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-composition-with-different-books_23-2148851051.jpg?w=740&t=st=1679999912~exp=1680000512~hmac=b063fd25e558c273dda0dc2c63e215a6c7817def2e69fd2743edebd0d40dbf8d" />
+      </div>
+    
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionRomanceFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Romance</h1>
+          <p class="book-types-card-paragraph">Romance is a category of fictional books that typically involves
+             a love story between two or more characters. This genre often explores themes of relationships, emotions, and human connections.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-composition-with-different-books_23-2148851051.jpg?w=740&t=st=1679999912~exp=1680000512~hmac=b063fd25e558c273dda0dc2c63e215a6c7817def2e69fd2743edebd0d40dbf8d" />
+      </div>
+    
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionCrime&MysteryFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Crime & Mystery</h1>
+          <p class="book-types-card-paragraph">Crime and mystery is a category of fictional books that typically 
+            involves a puzzle or a problem that needs to be solved. The genre often explores themes of crime, detective work, and investigation.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books_23-2149331952.jpg?w=740&t=st=1679999862~exp=1680000462~hmac=aa7b5c47b2522996a3c150d3db5d976eb0a2f82bf32405b9843ed961b87aa747" />
+      </div>
+    
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionHorrorFictionalDetailedView')">
+        <div class="mr-5">
+          <h1 class="book-types-card-heading">Horror</h1>
+          <p class="book-types-card-paragraph">Horror is a category of fictional books 
+            that typically aims to scare or horrify the reader. The genre often explores themes of fear, death, the supernatural, and the unknown.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-stacked-books-ladders-education-day_23-2149241046.jpg?w=740&t=st=1679999804~exp=1680000404~hmac=0177edc3fc12a3e0b2f3930dab7ba4f78f2ae54effda7ded4cb4f3f63ce9fc25" />
+      </div>
+      <button class="buttonc" onclick="display('sectionHomePage')">Back</button>
+    </div>
+    </div>
+    
+
+                     <!-- Non-Fictional book page -->
+     <div id="sectionNonFictionalBooks">
+    <div class="book-types-bg-container">
+      <h1 class="book-types-heading">Non Fictional Categories</h1>
+      <p class="book-types-paragraph">Non-fictional books are books that are based on real events, people, and facts. They can be divided into various categories, some of which include:
+        Biography, Autobiography, History, Memoir, Science, Self-Help, Travel, Philosophy, Essay, Reference, Political and Social Science.
+      </p>
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionBio&AutoNonFictionalDetailedView')">
+        <div>
+          <h1 class="book-types-card-heading">Biography and Autobiography</h1>
+          <p class="book-types-card-paragraph">A biography is a non-fictional book that tells the life story of a real person, usually someone who has had a significant impact on history or culture. It provides a detailed account of the person's life, achievements, and struggles.
+             Biographies can be written in various formats, such as chronological, thematic, or based on a particular period in the person's life. 
+            An autobiography, on the other hand, is a book written by the person themselves, about their own life. Autobiographies are usually written in a first-person narrative and can cover a specific period or their entire life. They offer a unique insight into the author's experiences, thoughts, and emotions.
+          </p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-stacked-books-ladders-education-day_23-2149241046.jpg?w=740&t=st=1679999804~exp=1680000404~hmac=0177edc3fc12a3e0b2f3930dab7ba4f78f2ae54effda7ded4cb4f3f63ce9fc25" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionMemoirNonFictionalDetailedView')">
+        <div>
+          <h1 class="book-types-card-heading">Memoirs</h1>
+          <p class="book-types-card-paragraph">Memoirs are a type of non-fictional book that focuses on a particular period, event, or theme in a person's life. Unlike autobiographies, which cover the author's entire life, memoirs are usually more focused and 
+            often have a specific purpose or message. Memoirs can be written in various styles, such as reflective, confessional, or humorous.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-composition-with-different-books_23-2148851051.jpg?w=740&t=st=1679999912~exp=1680000512~hmac=b063fd25e558c273dda0dc2c63e215a6c7817def2e69fd2743edebd0d40dbf8d" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionCookbookNonFictionalDetailedView')">
+        <div>
+          <h1 class="book-types-card-heading">Cookbooks</h1>
+          <p class="book-types-card-paragraph">Cookbooks are non-fictional books that provide recipes and cooking instructions for preparing different types of meals, dishes, and cuisines. 
+            They may also contain information on food preparation techniques, ingredients, and kitchen equipment.
+
+            Cookbooks can be categorized based on different themes or cuisines, such as vegetarian, baking, international, or quick and easy meals. 
+            Some cookbooks are written by professional chefs, while others may be authored by home cooks or food bloggers.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-composition-with-different-books_23-2148851051.jpg?w=740&t=st=1679999912~exp=1680000512~hmac=b063fd25e558c273dda0dc2c63e215a6c7817def2e69fd2743edebd0d40dbf8d" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionTrueStoriesNonFictionalDetailedView')">
+        <div>
+          <h1 class="book-types-card-heading">True Stories</h1>
+          <p class="book-types-card-paragraph">True stories are non-fictional books that narrate events, experiences, or situations that have actually occurred. These books are based on factual information and are often written by 
+            the people who have experienced the events themselves, or by journalists who have researched and investigated a particular topic.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-photo/front-view-stacked-books-ladders-education-day_23-2149241046.jpg?w=740&t=st=1679999804~exp=1680000404~hmac=0177edc3fc12a3e0b2f3930dab7ba4f78f2ae54effda7ded4cb4f3f63ce9fc25" />
+      </div>
+
+      <div class="book-types-card-container d-flex flex-row" onclick="display('sectionSelfHelpNonFictionalDetailedView')">
+        <div>
+          <h1 class="book-types-card-heading">Self Help</h1>
+          <p class="book-types-card-paragraph">Self-help books are non-fictional books that provide guidance, advice, or strategies for personal growth, self-improvement, and self-help. They are written with the intention of helping readers achieve their goals, 
+            overcome obstacles, and improve their lives in various ways.
+
+            Self-help books can cover a wide range of topics, such as relationships, career, spirituality, health, and personal finance. 
+            They are often authored by experts in the relevant field, such as psychologists, life coaches, spiritual leaders, or business executives.</p>
+
+        </div>
+        <img class="book-types-card-image" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books_23-2149331952.jpg?w=740&t=st=1679999862~exp=1680000462~hmac=aa7b5c47b2522996a3c150d3db5d976eb0a2f82bf32405b9843ed961b87aa747" />
+      </div>
+
+      <button class="buttonc" onclick="display('sectionHomePage')">Back</button>
+    
+    </div>
+    </div>
+
+    <!-- section Fictional Classics -->
+
+    <div id="sectionClassicsFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Classics Books</h1>
+            <p class="detailed-view-card-description">
+              Classics are a category of fictional books that are widely recognized as having significant literary value and enduring popularity, 
+              often spanning several generations. 
+              These books have stood the test of time and are considered to be some of the greatest works of literature in history.</p>
+              <p>Some examples of classic fictional books include:</p>
+              <ul>
+                <li>"Pride and Prejudice" by Jane Austen</li>
+                <li>"Wuthering Heights" by Emily Bronte</li>
+                <li>"The Great Gatsby" by F. Scott Fitzgerald</li>
+                <li>"To Kill a Mockingbird" by Harper Lee</li>
+                <li>"War and Peace" by Leo Tolstoy</li>
+                <li>"The Picture of Dorian Gray" by Oscar Wilde</li>
+                <li>"Moby-Dick" by Herman Melville</li>
+                <li>"Dracula" by Bram Stoker</li>
+                <li>"Jane Eyre" by Charlotte Bronte</li>
+                <li>"The Adventures of Huckleberry Finn" by Mark Twain.</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Tragedy -->
+
+    <div id="sectionTragedyFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Tragedy Books</h1>
+            <p class="detailed-view-card-description">
+              Tragedy is a category of fictional books that typically involves a story where the protagonist is brought to ruin or 
+              suffers extreme sorrow, often due to a flaw or mistake in their character. The story usually ends on a bleak or pessimistic
+               note, and often explores deeper human themes such as mortality, loss, and the human condition. </p>
+              <p>Some examples of fictional books in the tragedy category include:</p>
+              
+              <ul>
+                <li>"Hamlet" by William Shakespeare</li>
+                <li>"Macbeth" by William Shakespeare</li>
+                <li>"Oedipus Rex" by Sophocles</li>
+                <li>"Death of a Salesman" by Arthur Miller</li>
+                <li>"The Catcher in the Rye" by J.D. Salinger</li>
+                <li>"A Streetcar Named Desire" by Tennessee Williams</li>
+                <li>"The Bell Jar" by Sylvia Plath</li>
+                <li>"The Picture of Dorian Gray" by Oscar Wilde</li>
+                <li>"King Lear" by William Shakespeare</li>
+                <li>"The Grapes of Wrath" by John Steinbeck.</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Sci-Fi -->
+
+    <div id="sectionScifiFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Sci-Fi Books</h1>
+            <p class="detailed-view-card-description">
+              Sci-Fi, or science fiction, is a category of fictional books that imagines a future or alternate reality based on scientific and technological advances. 
+              This genre often explores themes related to science, technology, space exploration, and the future of humanity.</p>
+
+              <p>Some examples of fictional books in the Sci-Fi category include:</p>
+              <ul>
+                <li>"1984" by George Orwell</li>
+                <li>"Brave New World" by Aldous Huxley</li>
+                <li>"Dune" by Frank Herbert</li>
+                <li>"The War of the Worlds" by H.G. Wells</li>
+                <li>"Ender's Game" by Orson Scott Card</li>
+                <li>"The Hitchhiker's Guide to the Galaxy" by Douglas Adams</li>
+                <li>The Martian" by Andy Weir</li>
+                <li>"Foundation" by Isaac Asimov</li>
+                <li>"Snow Crash" by Neal Stephenson</li>
+                <li>"Do Androids Dream of Electric Sheep?" by Philip K. Dick</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Fantasy -->
+
+    <div id="sectionFantasyFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Fantasy Books</h1>
+            <p class="detailed-view-card-description">
+              Fantasy is a category of fictional books that typically involves elements of magic, mythology, and supernatural creatures in a fictional world.
+               The genre often explores themes of heroism, good versus evil, and the struggle between different forces.</p>
+
+              <p>Some examples of fictional books in the Fantasy category include:</p>
+              <ul>
+                <li>"The Lord of the Rings" by J.R.R. Tolkien</li>
+                <li>"Harry Potter" series by J.K. Rowling</li>
+                <li>"A Song of Ice and Fire" (aka "Game of Thrones") by George R.R. Martin</li>
+                <li>"The Chronicles of Narnia" by C.S. Lewis</li>
+                <li>"The Wheel of Time" series by Robert Jordan</li>
+                <li>"The Hobbit" by J.R.R. Tolkien</li>
+                <li>"The Kingkiller Chronicle" series by Patrick Rothfuss</li>
+                <li>"The Stormlight Archive" series by Brandon Sanderson</li>
+                <li>"The Name of the Wind" by Patrick Rothfuss</li>
+                <li>"The Malazan Book of the Fallen" series by Steven Erikson.</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Action&Adventure -->
+
+    <div id="sectionAction&AdventureFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Action and Adventure Books</h1>
+            <p class="detailed-view-card-description">
+              Action and adventure is a category of fictional books that typically involves a fast-paced story with thrilling sequences of physical 
+              action, danger, and excitement. This genre often explores themes of heroism, bravery, and survival in the face of adversity.</p>
+
+              <p>Some examples of fictional books in the Action and Adventure category include:</p>
+              <ul>
+                <li>"The Bourne Identity" by Robert Ludlum</li>
+                <li>"Jurassic Park" by Michael Crichton</li>
+                <li>"Treasure Island" by Robert Louis Stevenson</li>
+                <li>"The Da Vinci Code" by Dan Brown</li>
+                <li>"The Adventures of Sherlock Holmes" by Arthur Conan Doyle</li>
+                <li>"The Hunt for Red October" by Tom Clancy</li>
+                <li>"The Three Musketeers" by Alexandre Dumas</li>
+                <li>"The Hunger Games" by Suzanne Collins</li>
+                <li>"The Maze Runner" by James Dashner</li>
+                <li>"The Clifton Chronicles" series by Jeffrey Archer</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Romance -->
+
+    <div id="sectionRomanceFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Romance Books</h1>
+            <p class="detailed-view-card-description">
+              Romance is a category of fictional books that typically involves a love story 
+              between two or more characters. This genre often explores themes of relationships, emotions, and human connections.</p>
+
+              <p>Some examples of fictional books in the Sci-Fi category include:</p>
+              <ul>
+                <li>"Pride and Prejudice" by Jane Austen</li>
+                <li>"Outlander" by Diana Gabaldon</li>
+                <li>"The Notebook" by Nicholas Sparks</li>
+                <li>"The Time Traveler's Wife" by Audrey Niffenegger</li>
+                <li>"The Fault in Our Stars" by John Green</li>
+                <li>"Me Before You" by Jojo Moyes</li>
+                <li>"The Bridges of Madison County" by Robert James Waller</li>
+                <li>"The Last Song" by Nicholas Sparks</li>
+                <li>"The Wedding" by Nicholas Sparks</li>
+                <li>"The Rosie Project" by Graeme Simsion</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Crime&Mystery -->
+
+    <div id="sectionCrime&MysteryFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Crime and Mystery Books</h1>
+            <p class="detailed-view-card-description">
+              Crime and mystery is a category of fictional books that typically involves a puzzle or a problem that needs to be solved. 
+              The genre often explores themes of crime, detective work, and investigation.</p>
+
+              <p>Some examples of fictional books in the Crime and Mystery category include:</p>
+              <ul>
+                <li>"The Adventures of Sherlock Holmes" by Arthur Conan Doyle</li>
+                <li>"The Girl with the Dragon Tattoo" by Stieg Larsson</li>
+                <li>"The Da Vinci Code" by Dan Brown</li>
+                <li>"The Silence of the Lambs" by Thomas Harris</li>
+                <li>"Gone Girl" by Gillian Flynn</li>
+                <li>"The Murder of Roger Ackroyd" by Agatha Christie</li>
+                <li>"In Cold Blood" by Truman Capote</li>
+                <li>"The Hound of the Baskervilles" by Arthur Conan Doyle</li>
+                <li>"The Cuckoo's Calling" by Robert Galbraith (aka J.K. Rowling)</li>
+                <li>"The Big Sleep" by Raymond Chandler.</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <!-- section Fictional Horror -->
+
+    <div id="sectionHorrorFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Horror Books</h1>
+            <p class="detailed-view-card-description">
+              Horror is a category of fictional books that typically aims to scare or horrify the reader.
+               The genre often explores themes of fear, death, the supernatural, and the unknown.</p>
+
+              <p>Some examples of fictional books in the Horror category include:</p>
+              <ul>
+                <li>"Dracula" by Bram Stoker</li>
+                <li>"Frankenstein" by Mary Shelley</li>
+                <li>"The Shining" by Stephen King</li>
+                <li>"The Exorcist" by William Peter Blatty</li>
+                <li>"The Haunting of Hill House" by Shirley Jackson</li>
+                <li>"The Silence of the Lambs" by Thomas Harris</li>
+                <li>"American Psycho" by Bret Easton Ellis</li>
+                <li>"Carrie" by Stephen King</li>
+                <li>"Interview with the Vampire" by Anne Rice</li>
+                <li>"The Turn of the Screw" by Henry James</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+                                   <!-- End of Fictional books section -->
+
+     <!-- section Non Fictional Biography and Autobiography -->
+
+     <div id="sectionBio&AutoNonFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Biography and Autobiography Books</h1>
+            <p class="detailed-view-card-description">
+              A biography is a non-fictional book that tells the life story of a real person, usually someone who has had a significant impact on history or culture. It provides a detailed account of the person's life, achievements, and struggles.
+               Biographies can be written in various formats, such as chronological, thematic, or based on a particular period in the person's life.</p>
+
+              <p>Some examples of fictional books in the Biography category include:</p>
+              <ul>
+                <li>"Steve Jobs" by Walter Isaacson</li>
+                <li>"Becoming" by Michelle Obama</li>
+                <li>"Leonardo da Vinci" by Walter Isaacson</li>
+                <li>"The Immortal Life of Henrietta Lacks" by Rebecca Skloot</li>
+                <li>"Long Walk to Freedom" by Nelson Mandela</li></ul>
+
+                <p class="detailed-view-card-description">An autobiography, on the other hand, is a book written by the person themselves, about their own life. Autobiographies are usually written in a first-person narrative and can cover a specific period or their entire life.
+                   They offer a unique insight into the author's experiences, thoughts, and emotions.</p>
+                <p>Some examples of fictional books in the Biography category include:</p>
+                <ul>
+                <li>"The Story of My Experiments with Truth" by Mahatma Gandhi</li>
+                <li>"I Know Why the Caged Bird Sings" by Maya Angelou</li>
+                <li>"The Diary of a Young Girl" by Anne Frank</li>
+                <li>"The Autobiography of Malcolm X" by Malcolm X and Alex Haley</li>
+                <li>"Born a Crime" by Trevor Noah</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionNonFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+       <!-- section Non Fictional Memoirs -->
+
+     <div id="sectionMemoirNonFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Memoirs Books</h1>
+            <p class="detailed-view-card-description">
+              Memoirs are a type of non-fictional book that focuses on a particular period, event, or theme in a person's life. Unlike autobiographies,
+               which cover the author's entire life, memoirs are usually more focused and often have a specific purpose or message. Memoirs can be written in various styles, such as reflective, confessional, or humorous.
+
+Memoirs often cover a wide range of topics, such as personal struggles, cultural experiences, or political events. They can offer a unique perspective on historical
+ or social issues, as well as provide insight into the author's thoughts and emotions.</p>
+
+              <p>Some examples of Non fictional books in the Memoirs category include:</p>
+              <ul>
+                <li>"Educated" by Tara Westover</li>
+                <li>"The Glass Castle" by Jeannette Walls</li>
+                <li>"Angela's Ashes" by Frank McCourt </li>
+                <li>"Wild" by Cheryl Strayed</li>
+                <li>"The Year of Magical Thinking" by Joan Didion</li>
+                </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionNonFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+     <!-- section Non Fictional CookBook -->
+
+     <div id="sectionCookbookNonFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">CookBook Books</h1>
+            <p class="detailed-view-card-description">
+              Cookbooks are non-fictional books that provide recipes and cooking instructions for preparing different types of meals, dishes, and cuisines.
+               They may also contain information on food preparation techniques, ingredients, and kitchen equipment.
+
+Cookbooks can be categorized based on different themes or cuisines, such as vegetarian, baking, international, or quick and easy meals. 
+Some cookbooks are written by professional chefs, while others may be authored by home cooks or food bloggers.</p>
+
+              <p>Some examples of Non fictional books in the CookBook category include:</p>
+              <ul>
+                <li>"The Joy of Cooking" by Irma S. Rombauer</li>
+                <li>"Mastering the Art of French Cooking" by Julia Child</li>
+                <li>"Plenty" by Yotam Ottolenghi </li>
+                <li>"The Barefoot Contessa Cookbook" by Ina Garten</li>
+                <li>"Salt, Fat, Acid, Heat" by Samin Nosrat </li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionNonFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+     <!-- section Non Fictional True Stories -->
+
+     <div id="sectionTrueStoriesNonFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading"> True Stories Books</h1>
+            <p class="detailed-view-card-description">
+              True stories are non-fictional books that narrate events, experiences, or situations that have actually occurred.
+               These books are based on factual information and are often written by the people who have experienced the events themselves, or by journalists who have researched and investigated a particular topic.
+
+True stories can cover a wide range of topics, such as history, politics, science, sports, or personal experiences. They can be written in various styles, such as memoirs, biographies,
+ investigative journalism, or narrative non-fiction.</p>
+
+              <p>Some examples of Non fictional books in the True Stories category include:</p>
+              <ul>
+                <li>"Unbroken" by Laura Hillenbrand</li>
+                <li>"The Immortal Life of Henrietta Lacks" by Rebecca Skloot</li>
+                <li>"Into Thin Air" by Jon Krakauer </li>
+                <li>"The Sixth Extinction" by Elizabeth Kolbert </li>
+                <li>"Hillbilly Elegy" by J.D. Vance</li>
+                </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionNonFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+     <!-- section Non Fictional Self Help -->
+
+     <div id="sectionSelfHelpNonFictionalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading"> Self Help Books</h1>
+            <p class="detailed-view-card-description">
+              Self-help books are non-fictional books that provide guidance, advice, or strategies for personal growth, self-improvement, and self-help. They are written with the intention of helping readers achieve their goals, overcome obstacles, and improve their lives in various ways.
+
+Self-help books can cover a wide range of topics, such as relationships, career, spirituality, health, and personal finance. They are often authored by experts in the relevant field, 
+such as psychologists, life coaches, spiritual leaders, or business executives.</p>
+
+              <p>Some examples of Non fictional books in the Self Help category include:</p>
+              <ul>
+                <li>"The 7 Habits of Highly Effective People" by Stephen Covey </li>
+                <li>"The Power of Now" by Eckhart Tolle </li>
+                <li>"The Alchemist" by Paulo Coelho </li>
+                <li>"Atomic Habits" by James Clear </li>
+                <li>"You Are a Badass" by Jen Sincero </li>
+                <li>"Think and Grow Rich" by Napoleon Hill</li>
+                <li>"The Four Agreements" by Don Miguel Ruiz</li>
+                <li>"The Art of Happiness" by Dalai Lama and Howard C. Cutler</li>
+                <li>"The Secret" by Rhonda Byrne</li>
+                <li>"Man's Search for Meaning" by Viktor E. Frankl</li>
+              </ul>
+            
+          </div>
+        </div>
+        <button class="buttond" onclick="display('sectionNonFictionalBooks')">
+          back</button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  
+  </body>
+</html>
